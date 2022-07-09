@@ -9,8 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller
-public class EmployeeController {
+class EmployeeController {
     public record JsonEmployee(long id, String name, String email, String department) {}
+
     private final EmployeeRepository employeeRepository;
 
     public EmployeeController(EmployeeRepository employeeRepository) {
