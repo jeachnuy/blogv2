@@ -1,6 +1,5 @@
 package com.cos.blogv2.controller;
 
-import com.cos.blogv2.model.Employee;
 import com.cos.blogv2.repository.EmployeeRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +23,7 @@ class EmployeeController {
                 .toList();
     }
 
-    @GetMapping({"/showEmployees", "/", "/list"})
+    @GetMapping({"/showEmployees"})
     public ModelAndView showEmployees() {
         var mav = new ModelAndView("list-employees");
         mav.addObject("employees", getAllTasks());
