@@ -17,7 +17,7 @@ class EmployeeController {
         this.employeeRepository = employeeRepository;
     }
 
-    public List<JsonEmployee> getAllTasks() {
+    public List<JsonEmployee> getAllEmployees() {
         return employeeRepository.findAll().stream()
                 .map(data -> new JsonEmployee(data.getId(), data.getName(), data.getEmail() ,data.getDepartment()))
                 .toList();
@@ -26,7 +26,7 @@ class EmployeeController {
     @GetMapping({"/showEmployees"})
     public ModelAndView showEmployees() {
         var mav = new ModelAndView("list-employees");
-        mav.addObject("employees", getAllTasks());
+        mav.addObject("employees", getAllEmployees());
         return mav;
     }
 
