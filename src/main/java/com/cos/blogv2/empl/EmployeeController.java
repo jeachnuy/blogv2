@@ -1,6 +1,6 @@
-package com.cos.blogv2.controller;
+package com.cos.blogv2.empl;
 
-import com.cos.blogv2.repository.EmployeeRepository;
+import com.cos.blogv2.empl.EmployeeRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;

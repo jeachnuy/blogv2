@@ -1,5 +1,7 @@
-package com.cos.blogv2.model;
+package com.cos.blogv2.domain.user.entity;
 
+import com.cos.blogv2.model.BaseEntity;
+import com.cos.blogv2.model.RoleType;
 import lombok.*;
 
 import javax.persistence.*;

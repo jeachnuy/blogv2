@@ -1,4 +1,4 @@
-package com.cos.blogv2.model;
+package com.cos.blogv2.empl;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

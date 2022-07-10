@@ -1,5 +1,6 @@
 package com.cos.blogv2.model;
 
+import com.cos.blogv2.domain.user.entity.User;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
