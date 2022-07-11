@@ -1,5 +1,6 @@
 package com.cos.blogv2.domain.user.entity;
 
+import com.cos.blogv2.domain.mail.model.Addressable;
 import com.cos.blogv2.domain.management.entity.Auditable;
 import com.cos.blogv2.domain.management.repository.Queries;
 import com.cos.blogv2.model.RoleType;
@@ -17,7 +18,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Table(name = "user")
 @Where(clause = Queries.NON_DELETED_CLAUSE) //일반적으로 삭제할때 사용
-public class User extends Auditable implements Serializable {
+public class User extends Auditable implements Serializable, Addressable {
     @Serial
     private static final long serialVersionUID = 1L;
 

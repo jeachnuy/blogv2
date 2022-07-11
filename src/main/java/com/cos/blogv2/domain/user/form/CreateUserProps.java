@@ -1,5 +1,6 @@
 package com.cos.blogv2.domain.user.form;
 
+import com.cos.blogv2.domain.mail.model.Addressable;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.validation.BindingResult;
@@ -10,7 +11,7 @@ import javax.validation.constraints.Size;
 
 @Data
 @NoArgsConstructor
-public class CreateUserProps {
+public class CreateUserProps implements Addressable {
 
     @NotEmpty(message = "${user.username.not-empty}")
     private String name;

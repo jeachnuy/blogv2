@@ -8,6 +8,21 @@ spring:
     username: cos
     password: cos1234
 
+# mail
+  mail:
+    host: ${SMTP_HOST:smtp.gmail.com}
+    port: ${SMTP_PORT:587}
+    username: ${SMTP_USERNAME:user} #jae_0107@naver.com
+    password: ${SMTP_PASSWORD:secret} #fsdtldllxeiffcce
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          starttls:
+            enable: true
+
+
   jpa:
     open-in-view: true
 
