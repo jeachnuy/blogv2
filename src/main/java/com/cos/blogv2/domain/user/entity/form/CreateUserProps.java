@@ -1,4 +1,4 @@
-package com.cos.blogv2.domain.user.form;
+package com.cos.blogv2.domain.user.entity.form;
 
 import com.cos.blogv2.domain.mail.model.Addressable;
 import lombok.Data;

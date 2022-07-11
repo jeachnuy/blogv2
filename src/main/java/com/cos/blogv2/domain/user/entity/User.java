@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.hibernate.annotations.Where;
 
+import javax.management.relation.Role;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
@@ -46,6 +47,15 @@ public class User extends Auditable implements Serializable, Addressable {
     public User(Long id) {
         this.id = id;
     }
+
+    public User(String username, String email, String password, RoleType role) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
+    public User()
     @Override
     public Long getId() {
         return null;
